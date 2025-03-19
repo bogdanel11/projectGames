@@ -1,0 +1,54 @@
+[33mcommit dbd41bd717012f126cc8ccbb7cde3bcc88c5a69d[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/rps-ui[m[33m, [m[1;32mrps-ui[m[33m)[m
+Author: bogdanel11 <bogdan_blue11@yahoo.com>
+Date:   Wed Mar 19 10:41:22 2025 +0200
+
+    rockpaper scissors updated
+
+[33mcommit ee5bca5682530c30df3440efce893f04d243b5ac[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: bogdanel11 <bogdan_blue11@yahoo.com>
+Date:   Tue Mar 18 17:21:15 2025 +0200
+
+    Merge changes from GitHub
+
+[33mcommit a30b7bb6900fa87d4e7b731c1fe466cee7d63e46[m
+Author: hatethisjob <31011011+bogdanel11@users.noreply.github.com>
+Date:   Tue Mar 18 17:15:51 2025 +0200
+
+    Update README.md
+
+[33mcommit a9858879c802344bf695a11c6224a9a9f9f9d4ef[m
+Merge: 86f4b0f 4928eda
+Author: bogdanel11 <bogdan_blue11@yahoo.com>
+Date:   Tue Mar 18 17:14:42 2025 +0200
+
+    Merge changes from GitHub
+
+[33mcommit 86f4b0f88836368744e232efa169eca09ef7f44e[m
+Author: bogdanel11 <bogdan_blue11@yahoo.com>
+Date:   Tue Mar 18 17:08:56 2025 +0200
+
+    Add rock-paper-scissors folder and make other updates
+
+[33mcommit 4928eda65f1ba1a45a314b8628cbe7d2a42df34c[m
+Author: hatethisjob <31011011+bogdanel11@users.noreply.github.com>
+Date:   Tue Mar 18 17:01:27 2025 +0200
+
+    Initial commit
+
+[33mcommit bff9a382479023a2c5799d2fed7ce1e733681f5f[m
+Author: bogdanel11 <bogdan_blue11@yahoo.com>
+Date:   Tue Mar 18 16:50:15 2025 +0200
+
+    Removed Games folder from Git index
+
+[33mcommit bd3a9de99fa03190332117e6fa8321076a0e52c1[m
+Author: bogdanel11 <bogdan_blue11@yahoo.com>
+Date:   Tue Mar 18 16:23:51 2025 +0200
+
+    Initial commit
+
+[33mcommit ccad6db2a3e4756b71f2d441e54aa37af2e2fe5a[m
+Author: hatethisjob <31011011+bogdanel11@users.noreply.github.com>
+Date:   Tue Mar 18 14:20:27 2025 +0200
+
+    Create README.md
