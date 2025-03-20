@@ -1,9 +1,22 @@
 const gridSide=500;
 let squaresPerSide=16;
-
+let selectedButton='black';
+let click=true;
 const sketchArea=document.querySelector('#sketch-area');
 const resetButton=document.querySelector('#reset-button');
+const redButton=document.querySelector('#red');
+const blackButton=document.querySelector('#black');
+const randomButton=document.querySelector('#random');
 
+redButton.addEventListener('click',()=>{
+    selectedButton='red'
+});
+blackButton.addEventListener('click',()=>{
+    selectedButton='black'
+});
+randomButton.addEventListener('click',()=>{
+    selectedButton='random'
+});
 function createGridCells(){
     sketchArea.innerHTML='';
         for(let i=0;i<squaresPerSide*squaresPerSide;i++){
@@ -11,13 +24,19 @@ function createGridCells(){
             gridCell.style.width=gridCell.style.height=`${gridSide/squaresPerSide}px`
             gridCell.classList.add('cell');
             gridCell.style.backgroundColor='white'
-            let color=getRandomColor();
-            let darknessFactor=0;
             gridCell.addEventListener('mouseover',()=>{
-                if(darknessFactor<1){
-                    darknessFactor+=0.1;
-                    gridCell.style.backgroundColor=darknessColor(color,darknessFactor);
+                if(click)
+                {
+                    if(selectedButton==='random'){
+                        gridCell.style.backgroundColor=getRandomColor();
+                    }   
+                    else{
+                        gridCell.style.backgroundColor=selectedButton;
+
+                    }
                 }
+                
+               
             });
             sketchArea.appendChild(gridCell);
         }
@@ -31,14 +50,6 @@ function getRandomColor(){
 
     return `rgb(${r},${g},${b})`
 }
-
-function darknessColor(color,darknessFactor){
-    let [r,g,b]=color.match(/\d+/g).map(Number);
-    r=Math.max(0,Math.floor(r*(1-darknessFactor)));
-    g=Math.max(0,Math.floor(g*(1-darknessFactor)));
-    b=Math.max(0,Math.floor(b*(1-darknessFactor)));
-    return`rgb(${r},${g},${b})`;
-}
 resetButton.addEventListener('click',()=>{
     let newSize=parseInt(prompt('Enter the number of squares per side(max100):'))
     if(newSize>=1 && newSize<=100){
@@ -50,3 +61,7 @@ resetButton.addEventListener('click',()=>{
         alert('Invalid input!Please enter a number between 0 and 100')
     }
 });
+document.addEventListener('click',()=>{
+    click=!click;
+})
+createGridCells();
